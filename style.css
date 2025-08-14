@@ -17,7 +17,7 @@
 
 .titulo--active {
     color: rgb(160, 7, 255);
-    font-size: 30px;
+    font-size: 40px;
     font-family: Times;
     /* text-shadow: 5px 5px 5px rgb(255, 255, 255); */
 }
@@ -46,14 +46,21 @@
 }
 
 
-/* estilos de la seccionfrase */
-.sectionfrase {
-    color: rgb(255, 255, 255);
+/* estilos de la seccionencabezado */
+.sectionencabezado {
+    color: rgb(0, 0, 0);
     padding: 20px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(36, 67, 124, 0.322);
     text-align: center;
     font-family: Times;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.section__icono {
+    width: 10%;
+    height: 10%;
+    border-radius: 10%;
+    margin-bottom: 10px;
 }
 
 /* estilos al titulo cards */
@@ -62,20 +69,313 @@
     color: rgb(210, 35, 35);
     text-align: center;
     font-family: Times;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 20px;
 }
 
 /* estilos de las cards */
+
+:root {
+  --card-width: 30%;
+  --card-height: 100%;
+  --card-padding: 20px;
+  --card-radius: 10px;
+  --card-shadow: 0 0 10px rgba(0, 46, 253, 0.5);
+  /* --card-bg: #fff; */
+  /* --card-img-height: 200px; */
+}
+
 .cards {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 20px;
-    width: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    gap: 20px;
+    padding: var(--card-padding);
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    /* background-image: url(img/fondo4tetris.png); */
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card__img {
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+p {
+    font-family: Times;
+    font-size: 100%;
+    color: rgb(0, 0, 0);
+}
+
+.cards .button {
+    background-color: rgba(62, 26, 192, 0.418);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: rgb(145, 18, 204);
+    color: rgb(0, 0, 0);
+    transition: background-color 1.0s;
+}
+
+/* formulario de contacto */
+
+:root {
+  --form-gap: 20px;
+  --form-width: 600px;
+  --input-padding: 10px;
+  --input-radius: 5px;
+  --input-border: 1px solid #ccc;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #3760ad70;
+}
+
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: var(--form-gap);
+}
+
+.contact__form {
+  width: var(--form-width);
+  display: flex;
+  flex-direction: column;
+  gap: var(--form-gap);
+}
+
+.contact__row {
+  display: flex;
+  gap: var(--form-gap);
+}
+
+.contact__row--full {
+  flex-direction: column;
+}
+
+.contact__row--center {
+  justify-content: center;
+}
+
+.contact__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact__input {
+  padding: var(--input-padding);
+  border: var(--input-border);
+  border-radius: var(--input-radius);
+  font-size: 1rem;
+}
+
+.contact__input--textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact__button {
+  padding: 10px 20px;
+  background-color: #4a4aff6c;
+  color: white;
+  border: none;
+  border-radius: var(--input-radius);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact__button:hover {
+    background-color: #3a3aff;
+    transition: background-color 1.0s;
+}
+
+
+/* lista de tareas */
+
+:root {
+  --lista-gap: 20px;
+  --lista-font-size: 1.1rem;
+  --lista-color: #337d86;
+  --lista-padding: 15px;
+  --lista-radius: 8px;
+}
+
+.lista-tarea {
+  text-align: center;
+  padding: 30px;
+}
+
+.lista-tarea__titulo {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3a3aff;
+}
+
+.lista-tarea__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--lista-gap);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-tarea__item {
+  padding: var(--lista-padding);
+  border-radius: var(--lista-radius);
+  font-size: var(--lista-font-size);
+  color: var(--lista-color);
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* section testimonial */
+
+:root {
+  --testimonial-gap: 20px;
+  --testimonial-avatar-size: 80px;
+  --testimonial-fondo: #9577c5b6;
+  --testimonial-radius: 10px;
+  --testimonial-padding: 20px;
+  --testimonial-text-color: #333;
+  --testimonial-name-color: #111;
+}
+
+.testimonial {
+  padding: var(--testimonial-padding);
+  background-color: var(--testimonial-fondo);
+  border-radius: var(--testimonial-radius);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.testimonial__container {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--testimonial-gap);
+}
+
+.testimonial__avatar {
+  width: var(--testimonial-avatar-size);
+  height: var(--testimonial-avatar-size);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.testimonial__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--testimonial-name-color);
+  margin-bottom: 10px;
+}
+
+.testimonial__text {
+  font-size: 1rem;
+  color: var(--testimonial-text-color);
+  line-height: 1.6;
+}
+
+
+/* footer */
+
+:root {
+  --footer-bg: #222;
+  --footer-text: #000000;
+  --footer-link: #000000;
+  --footer-link-hover: #fff;
+  --footer-padding: 40px;
+  --footer-gap: 30px;
+}
+
+.footer {
+  background-image: url(img/tetris4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: var(--footer-padding);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+  gap: var(--footer-gap);
+  flex-wrap: wrap;
+}
+
+
+
+.footer__title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__link {
+  display: block;
+  color: var(--footer-link);
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: var(--footer-link-hover);
+}
+
+
+/* cards horizontal */
+
+.precios {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3a3aff;
+  margin-top: 20px;
+}
+
+.cardsHorizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }

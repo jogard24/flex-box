@@ -19,9 +19,10 @@
             </ul>
     </header>
 
-    <section class="sectionfrase">
-        <p>"Flexbox es el arte de encajar cada bloque en el lugar exacto, </p>
-        <p>como una partida de Tetris donde la victoria esta perfectamente alineada."</p>
+    <section class="sectionencabezado">
+        <img src="img/icono.png" alt="icono" class="section__icono">
+        <h1>"Flexbox es el arte de encajar cada bloque en el lugar exacto, </h1>
+        <h1>como una partida de Tetris donde la victoria esta perfectamente alineada."</h1>
     </section>
 
     <section class="sectiongaleria">
@@ -29,22 +30,151 @@
     </section>
 
     <section class="cards">
-        <div class="card-a">
+        <div class="card card--a">
             <h3>Card A</h3>
-            <p>Contenido de la tarjeta A.</p>
+            <img src="img/tetriscaratula.jpg" alt="tetriscaratula" class="card__img">
+            <p>Descripcion de la tarjeta A.</p>
+            <button class="button">Start</button>
         </div>
-        <div class="card-b">
+        <div class="card card--b">
             <h3>Card B</h3>
-            <p>Contenido de la tarjeta A.</p>
+            <img src="img/contra2.webp" alt="contra" class="card__img">
+            <p>Descripcion de la tarjeta B.</p>
+            <button class="button">Start</button>
         </div>
-        <div class="card-c">
+        <div class="card card--c">
             <h3>Card C</h3>
-            <p>Contenido de la tarjeta A.</p>
+            <img src="img/streetfighter.jpg" alt="streetfighter" class="card__img">
+            <p>Descripcion de la tarjeta C.</p>
+            <button class="button">Start</button>
         </div>
-        <div class="card-d">
+        <div class="card card--d">
             <h3>Card D</h3>
-            <p>Contenido de la tarjeta A.</p>
+            <img src="img/mario.webp" alt="mariocards" class="card__img">
+            <p>Descripcion de la tarjeta D.</p>
+            <button class="button">Start</button>
         </div>
     </section>
+
+   <section class="contact">
+  <h2 class="contact__title">Contáctanos</h2>
+  <form class="contact__form">
+    <div class="contact__row">
+      <div class="contact__field">
+        <label for="name" class="contact__label">Nombre:</label>
+        <input type="text" id="name" class="contact__input">
+      </div>
+      <div class="contact__field">
+        <label for="email" class="contact__label">Correo:</label>
+        <input type="email" id="email" class="contact__input">
+      </div>
+    </div>
+
+    <div class="contact__row">
+      <div class="contact__field">
+        <label for="subject" class="contact__label">Asunto:</label>
+        <input type="text" id="subject" class="contact__input">
+      </div>
+      <div class="contact__field">
+        <label for="phone" class="contact__label">Teléfono:</label>
+        <input type="tel" id="phone" class="contact__input">
+      </div>
+    </div>
+
+    <div class="contact__row contact__row--full">
+      <div class="contact__field">
+        <label for="message" class="contact__label">Mensaje:</label>
+        <textarea id="message" class="contact__input contact__input--textarea"></textarea>
+      </div>
+    </div>
+
+    <div class="contact__row contact__row--center">
+      <button type="submit" class="contact__button">Enviar</button>
+    </div>
+  </form>
+</section>
+
+<section class="lista-tareas">
+  <h2 class="lista-tarea__titulo">Lista de Tareas</h2>
+  <ul class="lista-tarea__items">
+    <li class="lista-tarea__item">♥ Definir objetivos del proyecto</li>
+    <li class="lista-tarea__item">♥ Crear estructura de base de datos</li>
+    <li class="lista-tarea__item">♥ Probar prototipo electrónico</li>
+    <li class="lista-tarea__item">♥ Diseñar branding visual</li>
+    <li class="lista-tarea__item">♥ Documentar presupuesto en Excel</li>
+  </ul>
+</section>
+
+<section class="testimonial">
+  <div class="testimonial__container">
+    <img src="img/avatar.png" alt="Foto del usuario" class="testimonial__avatar">
+    <div class="testimonial__content">
+      <h3 class="testimonial__name">Jose Roa</h3>
+      <p class="testimonial__text">
+        “Este proyecto ha sido una experiencia increíble. La atención al detalle y la funcionalidad superaron mis expectativas.”
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <section class="cardsHorizontal">
+        <h2 class="precios">Precios</h2>
+        <div class="card card--a">
+            <h3>Card A</h3>
+            <img src="img/tetriscaratula.jpg" alt="tetriscaratula" class="card__img">
+            <p>9999999 $ </p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="card card--b">
+            <h3>Card B</h3>
+            <img src="img/contra2.webp" alt="contra" class="card__img">
+            <p>9999999 $</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="card card--c">
+            <h3>Card C</h3>
+            <img src="img/streetfighter.jpg" alt="streetfighter" class="card__img">
+            <p>9999999 $</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="card card--d">
+            <h3>Card D</h3>
+            <img src="img/mario.webp" alt="mariocards" class="card__img">
+            <p>9999999 $.</p>
+            <button class="button">Comprar</button>
+        </div>
+    </section>
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__column">
+      <h4 class="footer__title">Arcade Flex Box</h4>
+      <ul class="footer__list">
+        <li><a href="#" class="footer__link">Sobre nosotros</a></li>
+        <li><a href="#" class="footer__link">Players</a></li>
+        <li><a href="#" class="footer__link">Box</a></li>
+      </ul>
+    </div>
+    <div class="footer__column">
+      <h4 class="footer__title">Soporte</h4>
+      <ul class="footer__list">
+        <li><a href="#" class="footer__link">Contacto</a></li>
+        <li><a href="#" class="footer__link">Alinear</a></li>
+        <li><a href="#" class="footer__link">Justificar</a></li>
+      </ul>
+    </div>
+    <div class="footer__column">
+      <h4 class="footer__title">Game Over</h4>
+      <ul class="footer__list">
+        <li><a href="#" class="footer__link">Privacidad</a></li>
+        <li><a href="#" class="footer__link">Términos</a></li>
+        <li><a href="#" class="footer__link">Offline</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
 </body>
 </html>
