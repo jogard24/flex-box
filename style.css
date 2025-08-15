@@ -3,14 +3,15 @@
     padding:0;
     box-sizing:border-box;
 }
-/* menu de navegacion */
+/* 1.	Barra de navegación con distribución 
+horizontal y menú alineado a la derecha.   */
+
 .header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
     background-color: rgba(73, 73, 171, 0.726);
-    /* background-image: url(img/fondo4tetris.png); */
     background-size: cover;
 }
 
@@ -46,34 +47,22 @@
 }
 
 
-/* estilos de la seccionencabezado */
-.sectionencabezado {
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    background-color: rgba(36, 67, 124, 0.322);
-    text-align: center;
-    font-family: Times;
-    font-size: 18px;
-}
 
-.section__icono {
-    width: 10%;
-    height: 10%;
-    border-radius: 10%;
-    margin-bottom: 10px;
-}
 
-/* estilos al titulo cards */
-
+/* titulo galeria cards */
 .galeria {
-    color: rgb(210, 35, 35);
-    text-align: center;
-    font-family: Times;
-    font-size: 40px;
-    margin-top: 20px;
+  color: rgb(210, 35, 35);
+  text-align: center;
+  font-family: Times;
+  font-size: 40px;
+  margin-top: 20px;
 }
 
-/* estilos de las cards */
+/* 2.	Tarjeta de producto con imagen, 
+descripción y botón distribuidos verticalmente.   */
+
+/* 3.	Galería de imágenes con filas 
+que se ajusten al ancho del contenedor.   */
 
 :root {
   --card-width: 30%;
@@ -104,7 +93,6 @@
     height: var(--card-height);
     border-radius: var(--card-radius);
     box-shadow: var(--card-shadow);
-    /* background-image: url(img/fondo4tetris.png); */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -121,6 +109,7 @@ p {
     color: rgb(0, 0, 0);
 }
 
+/*  estilos al button */
 .cards .button {
     background-color: rgba(62, 26, 192, 0.418);
     color: rgb(0, 0, 0);
@@ -137,7 +126,10 @@ p {
     transition: background-color 1.0s;
 }
 
-/* formulario de contacto */
+
+/* 4.	Formulario de contacto 
+con campos alineados en columnas y filas.   */
+
 
 :root {
   --form-gap: 20px;
@@ -218,8 +210,28 @@ p {
     transition: background-color 1.0s;
 }
 
+/* 5.	Encabezado de sección 
+con ícono y texto justificados.   */
 
-/* lista de tareas */
+.sectionencabezado {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    background-color: rgba(36, 67, 124, 0.322);
+    text-align: center;
+    font-family: Times;
+    font-size: 18px;
+}
+
+.section__icono {
+    width: 10%;
+    height: 10%;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+/* 6.	Lista de tareas con ítems 
+centrados y espaciados uniformemente.   */
+
 
 :root {
   --lista-gap: 20px;
@@ -261,7 +273,10 @@ p {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* section testimonial */
+
+/* 7.	Componente de testimonial con avatar 
+a la izquierda y texto a la derecha.   */
+
 
 :root {
   --testimonial-gap: 20px;
@@ -309,7 +324,9 @@ p {
 }
 
 
-/* footer */
+/* 8.	Footer con tres 
+columnas distribuidas equitativamente.   */
+
 
 :root {
   --footer-bg: #222;
@@ -362,7 +379,10 @@ p {
 }
 
 
-/* cards horizontal */
+
+/* 9.	Sección de precios 
+con tarjetas alineadas horizontalmente.   */
+
 
 .precios {
   text-align: center;
